@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Gotham City CCM</title>
+    <style>
+        /* Estilo para a seção animada */
+        #home {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #typed {
+            font-size: 55px; /* Tamanho da fonte aumentado */
+            font-family: 'Courier New', monospace;
+            border-right: 2px solid;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            color: black; /* Cor das letras */
+            animation: blink 0.75s step-end infinite; /* Efeito de piscar do cursor */
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent; /* Cursor pisca */
+            }
+        }
+
+        /* Estilos adicionais */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(218, 192, 192);
+        }
+
+        .section {
+            padding:50px 20px;
+            font-size: 20px;;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="LOGO GOTHAM.png" alt="Logo Ecomp" class="logo"> 
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/index.html">INICIO</a></li>
+                <li><a href="https://www.instagram.com/gothamcity.ccm?igsh=MTE5MHV5a3NkYTk5Mw==">Instagram</a></li>
+                <li><a href="https://www.instagram.com/ccm.joaoxxiii?igsh=MWtoeGNiY200d3VzMA==">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="section">
+    <div id="typed"></div>
+    <script>
+        const text = "Feira de Empreendedorismo do Gotham City.";
+        let index = 0;
+
+        function type() {
+            if (index < text.length) {
+                document.getElementById("typed").textContent += text.charAt(index);
+                index++;
+                setTimeout(type, 100); // Tempo entre cada letra
+            }
+        }
+
+        window.onload = type; // Inicia o efeito ao carregar a página
+    </script>
+</section>
+
+<section id="servicos" class="section">
+    <h2>Nossos Objetivo</h2>
+    <p>Nossa missão é te divertir, mostrar oque o Empreendedorismo representa pra nossa equipe e todos os projetos já feitos por 
+        nossos integrantes, mas nosso real propósito é despertar o SEU lado empreendedor, pra você enxergar coisas e ir a lugares que nunca nem imaginou.
+    </p>
+</section>
+
+<section id="sobre" class="section">
+    <h2>Sobre a Feira</h2>
+    <p>Tivemos a ideai de realiza-la juntamente com as amostras pedagógicas, incluindo diversão com as nossas varidas brincadeiras,
+        imersão com o site que você está vendo e com a venda dos produtos de nossos empreendedores Mirins!</p>
+    </header>
+    <section id="form" class="section">
+    <h2>Para Finalizar Sua Experiência.</h2>
+</div>
+<div class="botao-container">
+    <li><a href="https://forms.gle/E4ietcsBmuTMxqJ56">Formulário</a></li>
+</div>
+    
+
+    <main>
+        <section id="home">
+            <div class="titulo-container">
+                <h1>Nossos Colaboradores:</h1>
+                <h2>Tropicalia Doces,</h2>
+                <h2>Sabor Mágico,</h2>
+                <h2>Arte e Doces,</h2>
+                <h2>Tentação Salgada</h2>
+<p>Todas os nossos empreendedores trazem uma experiência maravilhosa a você, tem dúvida ou interesse?, entre em contato conosco através
+    do nosso Instagram no topo da página, ou procure algúem de nossa turma!!
+</p>
+            </div>
+        </section>
+    </main>
+<footer>
+    <p>&copy; 2024 Gotham City, CCM JOÃO XXIII. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
