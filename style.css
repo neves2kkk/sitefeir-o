@@ -1,0 +1,73 @@
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo padrão */
+header {
+    background: #000000;
+    color: #000000;
+    padding: 5em;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Estilos para dispositivos pequenos */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Estilo principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #000000;
+    color: #f4f4f4;
+
+}
+
+/* Estilos para tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        padding: 10px;
+    }
+}
+
+/* Estilos para desktops */
+@media (min-width: 901px) {
+    main {
+        max-width: 900px;
+        margin: auto;
+    }
+}
+
+header {
+    background-image: url('SITEFEIRAO/imagens/LOGO GOTHAM.PNG');
+    background-size: cover; /* A imagem cobre todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    height: 200px; /* Defina uma altura para o cabeçalho */
+    color: white; /* Cor do texto para contraste */
+    display: flex; /* Para centralizar o conteúdo */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+}
